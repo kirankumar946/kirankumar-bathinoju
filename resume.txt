@@ -1,0 +1,55 @@
+KIRAN KUMAR BATHINOJU
+Mobile Application Developer
+
+CONTACT INFORMATION
+Email: kiran.bathinoju@email.com
+Phone: +1 (555) 123-4567
+Location: Your City, State
+LinkedIn: linkedin.com/in/kiranbathinoju
+GitHub: github.com/kiranbathinoju
+
+PROFESSIONAL SUMMARY
+Experienced Mobile Application Developer with expertise in developing cross-platform mobile applications. Skilled in React Native, Flutter, and native iOS/Android development. Passionate about creating user-friendly and efficient mobile solutions.
+
+TECHNICAL SKILLS
+• Mobile Development: React Native, Flutter, Swift, Kotlin, Java
+• Frontend: JavaScript, TypeScript, HTML5, CSS3, React
+• Backend: Node.js, Python, Firebase, REST APIs
+• Databases: MongoDB, MySQL, SQLite
+• Tools: Git, VS Code, Android Studio, Xcode
+• Cloud: AWS, Google Cloud Platform
+
+EXPERIENCE
+Senior Mobile Developer | Company Name | 2020 - Present
+• Developed and maintained cross-platform mobile applications using React Native
+• Collaborated with design and backend teams to deliver high-quality user experiences
+• Implemented state management solutions and optimized app performance
+• Led mobile development projects from conception to deployment
+
+Mobile Developer | Previous Company | 2018 - 2020
+• Built native iOS and Android applications using Swift and Kotlin
+• Integrated third-party APIs and services
+• Conducted code reviews and mentored junior developers
+• Participated in agile development processes
+
+EDUCATION
+Bachelor of Technology in Computer Science
+University Name | 2014 - 2018
+
+CERTIFICATIONS
+• Google Mobile Web Specialist
+• AWS Certified Developer
+• React Native Certification
+
+PROJECTS
+• E-commerce Mobile App: Built a full-featured shopping app with payment integration
+• Social Media App: Developed a cross-platform social networking application
+• Fitness Tracker: Created a health and fitness monitoring mobile application
+
+LANGUAGES
+• English (Fluent)
+• Hindi (Native)
+• Telugu (Native)
+
+This is a dummy resume for testing purposes.
+Replace this file with your actual resume PDF.
