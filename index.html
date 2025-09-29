@@ -633,6 +633,23 @@ http://www.templatemo.com/tm-512-moonlight
                 font-size: 12px;
             }
         }
+        
+        /* Download Resume Button Styling */
+        #download-resume {
+            color: white !important;
+            background: linear-gradient(135deg, #4CAF50 0%, #45a049 25%, #2E7D32 50%, #1B5E20 75%, #4CAF50 100%);
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        #download-resume:hover {
+            color: #f0f0f0 !important;
+            background: linear-gradient(135deg, #66BB6A 0%, #4CAF50 25%, #388E3C 50%, #2E7D32 75%, #66BB6A 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(76, 175, 80, 0.3);
+        }
         </style>
     </head>
 
@@ -688,7 +705,7 @@ http://www.templatemo.com/tm-512-moonlight
                     <div class="col-md-6">
                         <div class="left-content">
                             <h2>About Me</h2>
-                            <p>Senior Android Engineer with 10 years of experience designing, developing, and deploying 30+ mobile applications across fintech, e-commerce, productivity, and utilities. Expert in Kotlin, Java, Flutter, and modern Android architectures such as MVVM, Clean Architecture, and Jetpack Compose. Skilled in building scalable, high-performance apps with a focus on usability, code quality, and aligning technical solutions with business goals.</p>
+                            <p>Senior Android Engineer with 9+ years of experience designing, developing, and deploying 30+ mobile applications across fintech, e-commerce, productivity, and utilities. Expert in Kotlin, Java, Flutter, and modern Android architectures such as MVVM, Clean Architecture, and Jetpack Compose. Skilled in building scalable, high-performance apps with a focus on usability, code quality, and aligning technical solutions with business goals.</p>
                             <p>Experienced in mentoring and leading development teams, conducting code reviews, and implementing best practices. Proven ability to deliver projects end-to-end, from architecture design to deployment and optimization. Passionate about leveraging the latest technologies to create efficient, user-centric applications that drive measurable impact.</p>
                           <div class="main-btn"><a href="#3">What I Can Do</a></div>
                       </div>
@@ -2369,15 +2386,37 @@ http://www.templatemo.com/tm-512-moonlight
         $('#download-resume').on('click', function(event) {
             event.preventDefault();
             
-            // Open resume in new window for PDF download/print
-            var resumeWindow = window.open('resume.html', '_blank');
-            
-            // Add print functionality after window loads
-            resumeWindow.onload = function() {
-                setTimeout(function() {
-                    resumeWindow.print();
-                }, 500);
-            };
+            // Fetch the PDF file and create a blob for download
+            fetch('kirankumar-bathinoju-senior-software-engineer.pdf')
+                .then(response => response.blob())
+                .then(blob => {
+                    // Create a temporary URL for the blob
+                    const url = window.URL.createObjectURL(blob);
+                    
+                    // Create a temporary link element to trigger download
+                    const link = document.createElement('a');
+                    link.href = url;
+                    link.download = 'kirankumar-bathinoju-senior-software-engineer.pdf';
+                    
+                    // Append to body, click, and remove
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                    
+                    // Clean up the temporary URL
+                    window.URL.revokeObjectURL(url);
+                })
+                .catch(error => {
+                    console.error('Error downloading resume:', error);
+                    // Fallback: try direct download
+                    const link = document.createElement('a');
+                    link.href = 'kirankumar-bathinoju-senior-software-engineer.pdf';
+                    link.download = 'kirankumar-bathinoju-senior-software-engineer.pdf';
+                    link.target = '_blank';
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                });
         });
         
         
