@@ -116,9 +116,9 @@ Contributions, issues, and feature requests are welcome! Feel free to check the 
 ## 📞 Contact
 
 **Kiran Kumar Bathinoju**
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
+- Email: [kirankumar946@gmail.com]
+- LinkedIn: [https://www.linkedin.com/in/kiran-kumar-bathinoju-1b916572]
+- GitHub: [https://github.com/kirankumar946]
 
 ## 🙏 Acknowledgments
 
