@@ -2465,7 +2465,7 @@ http://www.templatemo.com/tm-512-moonlight
             event.preventDefault();
             
             // Fetch the PDF file and create a blob for download
-            fetch('kirankumar-bathinoju-senior-software-engineer.pdf')
+            fetch('kirankumar-bathinoju.pdf')
                 .then(response => response.blob())
                 .then(blob => {
                     // Create a temporary URL for the blob
@@ -2474,7 +2474,7 @@ http://www.templatemo.com/tm-512-moonlight
                     // Create a temporary link element to trigger download
                     const link = document.createElement('a');
                     link.href = url;
-                    link.download = 'kirankumar-bathinoju-senior-software-engineer.pdf';
+                    link.download = 'kirankumar-bathinoju.pdf';
                     
                     // Append to body, click, and remove
                     document.body.appendChild(link);
@@ -2488,8 +2488,8 @@ http://www.templatemo.com/tm-512-moonlight
                     console.error('Error downloading resume:', error);
                     // Fallback: try direct download
                     const link = document.createElement('a');
-                    link.href = 'kirankumar-bathinoju-senior-software-engineer.pdf';
-                    link.download = 'kirankumar-bathinoju-senior-software-engineer.pdf';
+                    link.href = 'kirankumar-bathinoju.pdf';
+                    link.download = 'kirankumar-bathinoju.pdf';
                     link.target = '_blank';
                     document.body.appendChild(link);
                     link.click();
